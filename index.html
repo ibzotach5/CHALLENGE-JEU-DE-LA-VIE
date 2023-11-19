@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conway's Game of Life</title>
+</head>
+<body>
+    <header class="header">
+        <h1 id="gameTitle" class="game-title">GAME OF LIFE</h1>
+    </header>
+    <div class="controls">
+        <div class="button-container">
+            <div class="button-column">
+                <button id="playBtn">Play</button>
+                <button id="pauseBtn">Pause</button>
+                <button id="clearBtn">Clear</button>
+            </div>
+            <div class="slider-column">
+                <label for="columns">Columns:</label>
+                <input type="range" id="columns" min="1" max="50" value="20">
+                <label for="rows">Rows:</label>
+                <input type="range" id="rows" min="1" max="50" value="20">
+            </div>
+        </div>
+    </div>
+    <div class="game-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
